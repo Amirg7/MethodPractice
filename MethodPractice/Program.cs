@@ -4,9 +4,31 @@ namespace MethodPractice
 {
     class Program
     {
+        public static int Sum(int num1, int num2)
+        {
+            var answer = num1 + num2;
+            return answer;
+            
+        }
+        public static int Multiplication(int num1, int num2)
+        {
+            var answer = num1 * num2;
+            return answer;
+        }
         static void Main(string[] args)
         {
-            {
+            var amountOfCar = Sum(2, 6);
+            var productOfCar = Multiplication(10, 2);
+
+            Console.WriteLine(amountOfCar);
+            Console.WriteLine(Sum(2,2));
+            Console.WriteLine(productOfCar);
+            Console.WriteLine(Multiplication(10, 2));
+
+            
+               
+            
+       
                 //-----------exercise 1------------
                 //Name: Michael
                 //Favorite Color: Blue
@@ -34,9 +56,11 @@ namespace MethodPractice
                 Console.WriteLine($"Favorite Animal: {animal}");
                 Console.WriteLine($"Favorite Band: {band}");
 
+                //-----------exercise 2------------
+
+
 
 
             }
         }
     }
-}
